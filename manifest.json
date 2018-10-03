@@ -1,0 +1,22 @@
+{
+    "name": "jex-extension",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "Chrome extension for jex.com",
+    "content_scripts": [{
+        "matches": [
+            "https://www.jex.com/*"
+        ],
+        "js": [
+            "lib/jquery.min.js",
+            "index.js"
+        ],
+        "css": [
+            "index.css"
+        ],
+        "run_at": "document_end"
+    }],
+    "permissions": [
+        "https://www.jex.com/"
+    ]
+}
